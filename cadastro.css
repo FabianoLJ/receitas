@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #d48a73;
+  padding-top: 60px; 
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #3b3b3b;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.navbar a.active {
+  color: white;
+  font-weight: bold;
+}
+
+.form-container {
+  background-color: #d48a73;
+  padding: 30px;
+  width: 90%;
+  max-width: 900px; 
+  margin-top: 20px; 
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: black;
+  font-family: sans-serif;
+  margin-bottom: 4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-group.cep input {
+ margin-right: 500px;  
+}
+
+.form-item.numero label {
+margin-right: 5.5rem;
+}
+
+.form-item.complemento input {
+  padding-right: 9rem;
+
+}
+
+.form-item.cidade input{
+  margin-left: 7rem;
+  padding-right: 20rem;
+
+}
+
+label {
+  width: 100px;
+  color: black;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.half-width {
+  display: flex;
+  gap: 10px;
+}
+
+.form-item {
+  flex: 1;
+}
+
+.form-item.uf input {
+  margin-left: 3.8rem;
+}
+.form-item.uf label {
+  margin-left: 1rem;
+}
+
+
+.button-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 19px;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 21px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
